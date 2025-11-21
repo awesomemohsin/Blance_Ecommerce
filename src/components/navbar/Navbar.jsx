@@ -1,8 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
-import SearchBar from "../searchBar/SearchBar";
+import AISmartSearch from "../aiSearch/AISmartSearch";
 import { useSelector } from "react-redux";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import toast from "react-hot-toast";
+import myContext from "../../context/myContext";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const Navbar = () => {
     const user = JSON.parse(localStorage.getItem('users'));
@@ -10,6 +12,10 @@ const Navbar = () => {
     const cartItems = useSelector((state) => state.cart);
     const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    
+    // Get dark mode context
+    const context = useContext(myContext);
+    const { darkMode, toggleDarkMode } = context;
     
     // Close mobile menu when navigating or resizing to desktop
     useEffect(() => {
@@ -133,13 +139,13 @@ const Navbar = () => {
     );
 
     return (
-        <nav className="bg-gradient-to-r from-green-600 to-green-800 sticky top-0 z-50 shadow-lg">
+        <nav className="bg-[#f85606] sticky top-0 z-50 shadow-lg">
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row lg:justify-between items-center py-4 px-6 space-y-4 lg:space-y-0">
                     {/* Logo and hamburger section */}
                     <div className="flex justify-between items-center w-full lg:w-auto">
                         <Link to={'/'} className="transform hover:scale-105 transition-transform">
-                            <h2 className="font-bold text-white text-2xl">Organica<span className="text-green-200">Hub</span></h2>
+                            <h2 className="font-bold text-white text-2xl">Elanzo<span className="text-white/90">Hub</span></h2>
                         </Link>
                         
                         <HamburgerIcon 
@@ -153,8 +159,18 @@ const Navbar = () => {
                         <div className="w-full lg:w-auto order-2 lg:order-1 py-4 lg:py-0">
                             {navList}
                         </div>
-                        <div className="w-full lg:w-auto order-1 lg:order-2">
-                            <SearchBar />
+                        <div className="w-full lg:w-auto order-1 lg:order-2 flex items-center space-x-4">
+                            <AISmartSearch />
+                            <button 
+                                onClick={toggleDarkMode}
+                                className="p-2 rounded-full hover:bg-white/10 transition-colors focus:outline-none" 
+                                aria-label="Toggle Dark Mode"
+                            >
+                                {darkMode ? 
+                                    <FaSun className="text-yellow-300" size={18} /> : 
+                                    <FaMoon className="text-gray-100" size={18} />
+                                }
+                            </button>
                         </div>
                     </div>
                 </div>
