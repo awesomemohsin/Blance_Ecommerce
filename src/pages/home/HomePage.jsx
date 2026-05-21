@@ -16,19 +16,23 @@ const HomePage = () => {
   const context = useContext(myContext);
   const { loading } = context;
   const [showPopup, setShowPopup] = useState(false);
+  const [hideLoader, setHideLoader] = useState(false);
 
   useEffect(() => {
+    // Force-hide the loader after 2s (so screenshots/bots never capture it)
+    const loaderTimer = setTimeout(() => setHideLoader(true), 2000);
     // Show popup after 5 seconds
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 5000);
+    const popupTimer = setTimeout(() => setShowPopup(true), 5000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(loaderTimer);
+      clearTimeout(popupTimer);
+    };
   }, []);
 
   return (
     <Layout>
-      {loading && <Loader />}
+      {loading && !hideLoader && <Loader />}
       <HeroSection />
       <Category />
       <HomePageProductCard />
