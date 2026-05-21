@@ -9,15 +9,14 @@ function MyState({ children }) {
     // Loading State 
     const [loading, setLoading] = useState(false);
 
-    // Dark Mode State
+    // Dark Mode State — light mode is the default
     const [darkMode, setDarkMode] = useState(() => {
-        // Check localStorage and system preference
         const savedMode = localStorage.getItem('darkMode');
         if (savedMode !== null) {
             return savedMode === 'true';
         }
-        // If no saved preference, check system preference
-        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // Default to light mode
+        return false;
     });
 
     // User State
