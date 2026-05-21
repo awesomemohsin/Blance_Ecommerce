@@ -21,7 +21,7 @@ const HomePage = () => {
     // Show popup after 5 seconds
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 500);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
