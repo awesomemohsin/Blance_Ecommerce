@@ -172,7 +172,7 @@ const AllProduct = () => {
                                             <div className="p-6">
                                                 <div className="mb-4">
                                                     <h2 className="text-sm text-green-600 dark:text-green-500 font-medium mb-1 transition-colors duration-300">
-                                                        Elanzo
+                                                        Blance
                                                     </h2>
                                                     <h3 
                                                         onClick={() => navigate(`/productinfo/${id}`)}

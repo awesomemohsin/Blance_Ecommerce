@@ -148,7 +148,7 @@ const Signup = () => {
                             Create an Account
                         </h2>
                         <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300">
-                            Join Elanzo and start shopping
+                            Join Blance and start shopping
                         </p>
                     </div>
 

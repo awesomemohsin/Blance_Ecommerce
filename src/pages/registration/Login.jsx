@@ -161,7 +161,7 @@ const Login = () => {
                             Welcome Back
                         </h2>
                         <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300">
-                            Sign in to your Elanzo account
+                            Sign in to your Blance account
                         </p>
                     </div>
 

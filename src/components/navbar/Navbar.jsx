@@ -165,10 +165,10 @@ const Navbar = () => {
                     <div className="flex justify-between items-center w-full lg:w-auto">
                         <Link to={'/'} className="flex items-center gap-2 group">
                             <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-colors">
-                                <span className="text-white font-black text-sm">E</span>
+                                <span className="text-white font-black text-sm">B</span>
                             </div>
                             <h2 className="font-extrabold text-white text-xl tracking-tight">
-                                Elanzo<span className="text-white/70 font-medium">Hub</span>
+                                Blance<span className="text-white/70 font-medium">Hub</span>
                             </h2>
                         </Link>
                         <HamburgerIcon isOpen={mobileMenuOpen} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} />

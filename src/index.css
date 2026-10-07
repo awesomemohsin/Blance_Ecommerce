@@ -6,7 +6,7 @@
 /* ─── Google Fonts ─────────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap');
 
-/* ─── Elanzo Brand Tokens ───────────────────────────────────── */
+/* ─── Blance Brand Tokens ───────────────────────────────────── */
 :root {
   --brand-primary:   #f85606;
   --brand-deep:      #c94200;
@@ -40,7 +40,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ─── Tailwind "green" → Elanzo Brand overrides ─────────────── */
+/* ─── Tailwind "green" → Blance Brand overrides ─────────────── */
 .text-green-500  { color: var(--brand-primary)   !important; }
 .text-green-600  { color: var(--brand-primary)   !important; }
 .text-green-700  { color: var(--brand-deep)      !important; }

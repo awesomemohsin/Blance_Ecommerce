@@ -44,7 +44,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4 text-center">
           <p className="text-white/40 text-xs uppercase tracking-widest font-semibold mb-2">Crafted with ❤️</p>
           <p className="text-white/70 text-sm mb-3">
-            ©<span className="text-white font-bold">Elanzo</span> — Designed and Copyright by
+            ©<span className="text-white font-bold">Blance</span> — Designed and Copyright by
           </p>
           <a
             href="https://md-mohsin.vercel.app/"
@@ -93,7 +93,7 @@ const HomePage = () => {
             >
               <p className="text-white/40 text-xs uppercase tracking-widest font-semibold mb-1.5">Crafted with ❤️</p>
               <p className="text-white/70 text-xs mb-3">
-                ©<span className="text-white font-bold"> Elanzo</span> — Designed and Copyright by
+                ©<span className="text-white font-bold"> Blance</span> — Designed and Copyright by
               </p>
               <a
                 href="https://md-mohsin.vercel.app/"

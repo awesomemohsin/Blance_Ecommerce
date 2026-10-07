@@ -10,17 +10,17 @@ const Footer = () => {
                     <div className="flex items-center gap-3">
                         <div className="w-9 h-9 rounded-xl flex items-center justify-center"
                             style={{ background: 'linear-gradient(135deg, #f85606, #ff8c42)' }}>
-                            <span className="text-white font-black text-base">E</span>
+                            <span className="text-white font-black text-base">B</span>
                         </div>
                         <div>
-                            <p className="font-extrabold text-white text-lg leading-none">ElanzoHub</p>
+                            <p className="font-extrabold text-white text-lg leading-none">BlanceHub</p>
                             <p className="text-white/40 text-xs mt-0.5">Fashion for everyone</p>
                         </div>
                     </div>
 
                     {/* Copyright */}
                     <p className="text-white/40 text-sm text-center">
-                        © {currentYear} Elanzo — Copyright by{" "}
+                        © {currentYear} Blance — Copyright by{" "}
                         <a
                             href="https://md-mohsin.vercel.app/"
                             target="_blank"

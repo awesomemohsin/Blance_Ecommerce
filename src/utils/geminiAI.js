@@ -1,4 +1,4 @@
-// Gemini AI utility functions for Elanzo e-commerce platform
+// Gemini AI utility functions for Blance e-commerce platform
 const GEMINI_API_KEY = 'AIzaSyAxsK_qradSp0pG9-KxV-_xXb4swhEeMhQ';
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
@@ -229,13 +229,13 @@ Return a JSON object with:
 // AI-powered customer support
 export const aiCustomerSupport = async (query, context) => {
     const prompt = `
-You are an AI customer support agent for Elanzo, an e-commerce platform specializing in natural and organic beauty products.
+You are an AI customer support agent for Blance, an e-commerce platform specializing in natural and organic beauty products.
 
 Customer Query: "${query}"
 Context: ${JSON.stringify(context)}
 
 Instructions:
-1. Provide helpful, accurate information about Elanzo products and services
+1. Provide helpful, accurate information about Blance products and services
 2. Be friendly, professional, and empathetic
 3. If you can't answer something, suggest contacting human support
 4. Focus on solving the customer's problem

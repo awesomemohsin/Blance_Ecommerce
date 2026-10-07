@@ -364,7 +364,7 @@ const CartPage = () => {
                             <div className="mt-6 bg-green-50 dark:bg-green-900/20 p-4 rounded-lg transition-colors duration-300">
                                 <h4 className="text-green-800 dark:text-green-400 font-medium mb-2 transition-colors duration-300">Contact Support</h4>
                                 <p className="text-green-700 dark:text-green-500 transition-colors duration-300">
-                                    Email: support@elanzo.com<br />
+                                    Email: support@blance.com<br />
                                     Phone: +880 623-456-7890
                                 </p>
                             </div>

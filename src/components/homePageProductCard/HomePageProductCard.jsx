@@ -136,7 +136,7 @@ const HomePageProductCard = () => {
                                     {/* Content */}
                                     <div className="p-5 flex flex-col flex-1">
                                         <div className="flex-1">
-                                            <p className="text-xs font-bold text-[#f85606] uppercase tracking-wide mb-1">Elanzo</p>
+                                            <p className="text-xs font-bold text-[#f85606] uppercase tracking-wide mb-1">Blance</p>
                                             <h3
                                                 onClick={() => navigate(`/productinfo/${id}`)}
                                                 className="text-base font-bold text-gray-800 mb-1.5 line-clamp-2 cursor-pointer hover:text-[#f85606] transition-colors duration-200 leading-snug"

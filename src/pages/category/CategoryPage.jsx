@@ -70,7 +70,7 @@ const CategoryPage = () => {
                                                 <div className="p-6">
                                                     <div className="mb-4">
                                                         <h2 className="text-sm text-green-600 font-medium mb-1">
-                                                            Elanzo
+                                                            Blance
                                                         </h2>
                                                         <h3 
                                                             onClick={() => navigate(`/productinfo/${id}`)}
